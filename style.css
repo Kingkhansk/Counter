@@ -1,0 +1,51 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+ background-color: #5c5c5c;
+}
+#num {
+ transition:1;
+ font-family: 'Trade Winds', cursive;
+ font-size: 100px;
+ color:#fff;
+}
+div.cnt{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 90vh;
+}
+p {
+ margin: 0;
+ padding: 0;
+}
+u{
+color: #fff;
+}
+.c {
+ font-size: 200px;
+ font-family: arial;
+ color: #fcba03;
+}
+button.cn{
+font-size: 60px;
+background-color: white;
+margin: 5px;
+width: 70px;
+height: 70px;
+border-color: black;
+border-radius: 20%;
+}
+button.rst{
+font-size: 40px;
+width: 120px;
+border-radius: 20px;
+border-color: black;
+
+}
+button:active{
+transform: translateY(1px);
+}
