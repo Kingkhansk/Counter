@@ -1,51 +1,72 @@
 * {
- margin: 0;
- padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body {
- background-color: #5c5c5c;
-}
-#num {
- transition:1;
- font-family: 'Trade Winds', cursive;
- font-size: 100px;
- color:#fff;
-}
-div.cnt{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 90vh;
-}
-p {
- margin: 0;
- padding: 0;
-}
-u{
-color: #fff;
-}
-.c {
- font-size: 200px;
- font-family: arial;
- color: #fcba03;
-}
-button.cn{
-font-size: 60px;
-background-color: white;
-margin: 5px;
-width: 70px;
-height: 70px;
-border-color: black;
-border-radius: 20%;
-}
-button.rst{
-font-size: 40px;
-width: 120px;
-border-radius: 20px;
-border-color: black;
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #444, #222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
 }
-button:active{
-transform: translateY(1px);
+
+.cnt {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  width: min(90%, 400px);
+}
+
+.c {
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: #fcba03;
+  margin-bottom: 1rem;
+}
+
+#num {
+  font-family: 'Trade Winds', cursive;
+  font-size: clamp(4rem, 10vw, 6rem);
+  color: #fff;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.15s ease;
+}
+
+button.cn {
+  width: 70px;
+  height: 70px;
+  font-size: 2.5rem;
+  background-color: #fff;
+}
+
+button.rst {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  background-color: #fcba03;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.95);
 }
