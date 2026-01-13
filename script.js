@@ -1,17 +1,23 @@
-i = 0;
-pl = document.getElementById("num");
+let count = 0;
+const num = document.getElementById("num");
+
+function update() {
+  num.textContent = count;
+  num.style.transform = "scale(1.1)";
+  setTimeout(() => num.style.transform = "scale(1)", 150);
+}
 
 function plus() {
- i++;
- pl.innerHTML = i;
+  count++;
+  update();
 }
 
 function minus() {
- i--;
- pl.innerHTML = i;
+  count--;
+  update();
 }
 
 function reset() {
- i = 0;
- pl.innerHTML = "0";
+  count = 0;
+  update();
 }
